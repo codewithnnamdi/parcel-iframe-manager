@@ -1,0 +1,12 @@
+{
+  "name": "parcel-iframe-manager",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "dependencies": {
+    "@parcel/core": "^2.8.3",
+    "iframe-resizer": "^4.3.1"
+  },
+  "peerDependencies": {
+    "@parcel/core": "^2.0.0"
+  }
+}
