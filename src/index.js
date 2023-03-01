@@ -22,4 +22,3 @@ class IframeManager extends Transformer {
     }
 }
 
-module.exports = IframeManager;
