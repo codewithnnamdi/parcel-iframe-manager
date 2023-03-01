@@ -2,9 +2,6 @@ const { Transformer } = require('@parcel/core');
 const { promisify } = require('util');
 const iframe = promisify(require('iframe-resizer').iframeResizer);
 
-/**
- * An IframeManager
- */
 class IframeManager extends Transformer {
     async transform() {
         const iframes = this.getAssets().filter(asset => asset.type === 'html' && asset.content.includes('<iframe'));
@@ -25,3 +22,4 @@ class IframeManager extends Transformer {
     }
 }
 
+module.exports = IframeManager;
